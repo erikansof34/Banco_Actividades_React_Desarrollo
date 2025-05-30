@@ -1,0 +1,148 @@
+.activity-container1 {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  line-height: 1.2;
+  background: transparent !important;
+  padding: 0 !important;
+  gap: 0.7rem !important;
+}
+
+.drop-zones1 {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-direction: row;
+}
+
+.drop-zone1 {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30vw;
+  height: 30vh;
+  min-height: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  background-color: white;
+}
+
+.drop-zone.correct1 {
+  background-color: #4caf50;
+  min-height: 370px;
+  justify-content: space-between;
+}
+
+.drop-zone.incorrect1 {
+  background-color: #f44336;
+  min-height: 370px;
+  justify-content: space-between;
+}
+
+.verification-image1 {
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 64px;
+  height: 64px;
+}
+
+.option-text1 {
+  margin: 10px;
+  box-sizing: content-box;
+  margin: 10px;
+  border-radius: 8px;
+  list-style-type: disc;
+  background-color: transparent;
+  text-align: justify;
+}
+
+.drop-area1 {
+  width: 100%;
+  height: 50px;
+  border: 2px dashed gray;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.drop-area-wrapper1 {
+  width: 100%;
+}
+
+.drop-area.drop-over1 {
+  background-color: #e6e6e6;
+}
+
+.drop-area.drop-correct1 {
+  background-color: #90ee90;
+  border-color: #90ee90;
+  color: #0f172a;
+}
+
+.drop-area.drop-incorrect1 {
+  background-color: #ffb6c1;
+  border-color: #ffb6c1;
+  color: #0f172a;
+}
+
+.draggable-option1 {
+  width: 190px;
+  height: 50px;
+  background-color: #c0185d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.remaining-options1 {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.validation-message1 {
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.validation-message.success1 {
+  background-color: #4caf50;
+  color: white;
+}
+
+.validation-message.error1 {
+  background-color: #f44336;
+  color: white;
+}
+
+.validation-summary1 {
+  text-align: center;
+  font-size: 16px;
+  color: #717171;
+  font-weight: bold;
+}
+
+.action-buttons1 {
+  display: flex;
+  justify-content: center;
+}

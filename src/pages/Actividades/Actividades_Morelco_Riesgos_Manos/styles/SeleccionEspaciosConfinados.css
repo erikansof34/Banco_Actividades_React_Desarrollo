@@ -1,0 +1,198 @@
+.quiz-container-ESC {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.cards-container-ESC {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.gap-size {
+  gap: 1.5rem;
+}
+
+.quiz-card-ESC {
+  perspective: 1500px;
+  height: 183px;
+  cursor: pointer;
+  min-width: 220px;
+  margin: 0 1rem;
+}
+
+.card-front-ESC {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease;
+}
+
+.card-image-ESC {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-image-ESC img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.card-content-ESC {
+  padding: 0.5rem;
+  flex-grow: 1;
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.validation-icon-containerESC {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.validation-iconESC {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.bg-green-personalizado {
+  background-color: #4caf50;
+}
+
+.bg-red-personalizado {
+  background-color: #f44336;
+}
+
+.bg-orange-personalizado {
+  background-color: #ff9800;
+}
+
+.bg-purple-personalizado {
+  background-color: #0f172a;
+}
+
+.feedback-container-ESC {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback-container-ESC p {
+  font-weight: bold;
+  color: #8f8f8f;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.text-green-personalizado {
+  color: #4caf50;
+}
+
+.text-red-personalizado {
+  color: #f44336;
+}
+
+.text-orange-personalizado {
+  color: #ff9800;
+}
+
+.bold-text {
+  font-weight: bold;
+  color: #8f8f8f;
+  font-family: Montserrat, sans-serif;
+}
+
+.action-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: #c0185d;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button.disabled {
+  background-color: #d3a4c2;
+  cursor: not-allowed;
+}
+
+.action-button:hover {
+  background-color: #0f172a;
+}
+
+/* Estilos para el select cuando está abierto */
+select:focus option {
+  color: black !important;
+  background: white !important;
+}
+
+@media (max-width: 1024px) {
+  .cards-container-ESC {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .quiz-container-ESC {
+    padding: 0;
+  }
+  
+  .cards-container-ESC {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+  
+  .quiz-card-ESC {
+    height: 250px;
+    min-width: auto;
+    margin: 0 auto;
+    width: 95%;
+  }
+  
+  .card-front-ESC {
+    width: 100%;
+  }
+  
+  .action-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .card-image-ESC {
+    height: 100%;
+  }
+}
