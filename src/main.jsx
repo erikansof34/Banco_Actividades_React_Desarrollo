@@ -100,9 +100,16 @@ import DnD_Conceptos_Clave from "./pages/Actividades/Actividades_Tecnitanques_So
 import Conceptos_Clave_Selects from "./pages/Actividades/Actividades_Tecnitanques_Soldadura/Conceptos_Clave_Selects.jsx";
 import IdentificaRolSoldadura from "./pages/Actividades/Actividades_Tecnitanques_Soldadura/IdentificaRolSoldadura.jsx";
 import ActividadApoyoSocial from "./pages/Actividades/Actividades_Riesgo_Psicosocial/ActividadApoyoSocial.jsx"
+import Dragandrop_ordenar_Gibec from "./pages/Actividades/Actividades_GIBEC/Dragandrop_ordenar_Gibec.jsx";
+import Dragandrop_ordenar_nom035 from "./pages/Actividades/Actividades_Prevencion_Psicosocial/Dragandrop_ordenar_nom035.jsx";
+import Seleccione_Video_Caso from "./pages/Actividades/Actividades_Prevencion_Psicosocial/Seleccione_Video_Caso.jsx";
+import Seleccione_Video_Caso_V2 from "./pages/Actividades/Actividades_Prevencion_Psicosocial/Seleccione_Video_Caso_V2.jsx";
+import Seleccione_Acto_Comportamiento_Inseguro from "./pages/Actividades/Actividades_Prevencion_Psicosocial/Seleccione_Acto_Comportamiento_Inseguro.jsx";
+import Seleccione_Acto_Comportamiento_Inseguro_V2 from "./pages/Actividades/Actividades_Prevencion_Psicosocial/Seleccione_Acto_Comportamiento_Inseguro_V2.jsx";
+import Seleccione_Multiple_Acto_Comportamiento_Inseguro from "./pages/Actividades/Actividades_Prevencion_Psicosocial/Seleccione_Multiple_Acto_Comportamiento_Inseguro.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <DragAndDropAlturas2 />
+    <Seleccione_Acto_Comportamiento_Inseguro_V2 />
   </React.StrictMode>
 );
