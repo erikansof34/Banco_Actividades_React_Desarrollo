@@ -36,21 +36,23 @@ select {
   left: 60%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  pointer-events: none; /* Evita que interfiera con los eventos del usuario */
+  pointer-events: none;
+  /* Evita que interfiera con los eventos del usuario */
 }
 
 .validation-icon {
   margin: 0;
-  width: 50px; /* Ajusta el tamaño según sea necesario */
+  width: 50px;
+  /* Ajusta el tamaño según sea necesario */
   height: 50px;
   max-width: 50px !important;
   object-fit: contain;
 }
 
-img {
+/* img {
   max-width: 100px;
   margin-bottom: 0 !important;
-}
+} */
 
 .quiz-card-ra:hover .card-inner-ra {
   transform: rotateY(180deg);
@@ -90,6 +92,7 @@ img {
   .container-actividad {
     margin-top: 0;
   }
+
   .cards-container-ra {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
